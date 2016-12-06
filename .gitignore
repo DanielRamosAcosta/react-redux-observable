@@ -1,0 +1,11 @@
+_book/
+node_modules/
+gh-pages/
+wiki/
+*.log
+*.~
+*.DS_Store
+.AppleDouble
+.LSOverride
+npm-debug.log.*
+*.out
