@@ -12,3 +12,10 @@ export function chatDisconnect () {
     type: ActionTypes.CHAT_DISCONNECT
   }
 }
+
+export function sendMessage (message) {
+  return {
+    type: ActionTypes.CHAT_SEND_MESSAGE,
+    payload: {message}
+  }
+}

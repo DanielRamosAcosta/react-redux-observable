@@ -12,7 +12,7 @@ const chatEpic = action$ =>
   .mergeMap(({ payload }) => Observable
     .webSocket({
       url: payload,
-      resultSelector: msgEvent => JSON.parse(msgEvent.data)
+      resultSelector: ev => JSON.parse(ev.data)
     })
     .map(payload => ({ type: CHAT_RECEIVE_MESSAGE, payload }))
     .takeUntil(action$.ofType(CHAT_DISCONNECT))
