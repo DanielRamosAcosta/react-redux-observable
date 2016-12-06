@@ -16,7 +16,8 @@ module.exports = {
       filename: 'index.html'
     }),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV === 'production' ? 'production' : 'development')
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV === 'production' ? 'production' : 'development'),
+      'process.env.WEBSOCKET_URI': JSON.stringify('wss://ruby-websockets-chat.herokuapp.com')
     })
   ],
   module: {

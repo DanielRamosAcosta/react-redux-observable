@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-import ping from './ping'
+import chat from './chat'
 
 export default combineReducers({
-  ping
+  chat
 })

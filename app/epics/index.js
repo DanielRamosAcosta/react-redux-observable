@@ -1,6 +1,6 @@
 import { combineEpics } from 'redux-observable';
-import pingEpic from './ping';
+import chat from './chat';
 
 export default combineEpics(
-  pingEpic
+  chat
 );
