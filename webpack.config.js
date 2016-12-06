@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   devtool: 'inline-sourcemap',
-  entry: './app/main.jsx',
+  entry: ['rxjs', './app/main.jsx'],
   output: {
     path: path.resolve('dist'),
     filename: '[name].js'

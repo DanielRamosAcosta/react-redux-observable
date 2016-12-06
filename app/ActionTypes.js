@@ -1,1 +1,2 @@
-export const PONGED = 'PONGED'
+export const PING = 'PING'
+export const PONG = 'PONG'

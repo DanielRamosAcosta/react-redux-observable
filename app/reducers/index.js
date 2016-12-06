@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-import pingPong from './pingPong'
+import ping from './ping'
 
 export default combineReducers({
-  pingPong
+  ping
 })

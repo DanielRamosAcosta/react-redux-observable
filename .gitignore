@@ -9,3 +9,4 @@ wiki/
 .LSOverride
 npm-debug.log.*
 *.out
+dist

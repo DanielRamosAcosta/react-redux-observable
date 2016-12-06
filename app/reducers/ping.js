@@ -1,14 +1,18 @@
 import * as ActionTypes from '../ActionTypes'
 
 export default function reducer (state = {
-  ping: false,
-  pong: false
+  isPinging: false
 }, action) {
   switch (action.type) {
-    case ActionTypes.PONGED:
+    case ActionTypes.PING:
       return {
         ...state,
-        pong: true
+        isPinging: true
+      }
+    case ActionTypes.PONG:
+      return {
+        ...state,
+        isPinging: false
       }
     default:
       return state;
