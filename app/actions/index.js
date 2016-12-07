@@ -1,9 +1,12 @@
 import * as ActionTypes from '../ActionTypes'
 
-export function chatConnect (uri = process.env.WEBSOCKET_URI) {
+export function chatConnect (username, uri = process.env.WEBSOCKET_URI) {
   return {
     type: ActionTypes.CHAT_CONNECT,
-    payload: uri
+    payload: {
+      uri,
+      username
+    }
   }
 }
 
