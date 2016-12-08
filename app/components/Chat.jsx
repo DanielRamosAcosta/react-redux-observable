@@ -7,16 +7,13 @@ import Connection from './Chat/Connection'
 import Inputs from './Chat/Inputs'
 
 @connect(
-  ({ chat }) => ({
-    messages: chat.messages,
-    connected: chat.connected
-  }),
+  ({ chat }) => chat,
   { chatConnect, chatDisconnect, sendMessage }
 )
 export default class Chat extends React.Component {
   renderMessages (messages) {
     return messages.map((message, i) =>
-      <div key={i}><span>{message.handle}:</span> <span>{message.text}</span></div>
+      <div key={i}><span>{message.username}:</span> <span>{message.text}</span></div>
     )
   }
 

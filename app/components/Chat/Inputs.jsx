@@ -3,15 +3,12 @@ import React from 'react'
 export default class Inputs extends React.Component {
   constructor () {
     super()
-    this.state = {
-      message: ''
-    }
+    this.state = {message: ''}
   }
 
   handleKeyPress (e) {
-    if(e.charCode === 13) {
-      this.sendMessage()
-    }
+    if(e.charCode !== 13) return
+    this.sendMessage()
   }
 
   sendMessage () {

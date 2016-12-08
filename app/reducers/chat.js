@@ -11,17 +11,11 @@ export default function reducer (state = {
         ...state,
         messages: state.messages.concat(action.payload)
       }
-    // FIXME
     case ActionTypes.CHAT_CONNECT:
       return {
         ...state,
         connected: true,
         username: action.payload.username
-      }
-    case ActionTypes.CHAT_CONNECTED:
-      return {
-        ...state,
-        connected: true
       }
     case ActionTypes.CHAT_DISCONNECT:
       return {

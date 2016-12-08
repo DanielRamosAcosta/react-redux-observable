@@ -16,9 +16,9 @@ export function chatDisconnect () {
   }
 }
 
-export function sendMessage (message) {
+export function sendMessage (text) {
   return {
     type: ActionTypes.CHAT_SEND_MESSAGE,
-    payload: {message}
+    payload: {text}
   }
 }
